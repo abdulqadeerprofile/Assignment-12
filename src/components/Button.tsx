@@ -10,7 +10,8 @@ interface ButtonProps {
 const Button = ({ color, text,width,tColor }:ButtonProps) => {
   return (
     <button
-      className={`py-4 px-4 w-[${width}] rounded-lg shadow-md transition-all bg-[#${color}] text-${tColor}`}
+      className={`py-4 px-4 w-[${width}] rounded-lg shadow-md transition-all text-${tColor}`}
+      style={{backgroundColor:`#${color}`}}
     >
       {text}
     </button>
